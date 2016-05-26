@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.actiivity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.slkk.zhihuplus.ui.view.PagerSlidingTab
+            android:id="@+id/pagerSlidingTab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </com.example.slkk.zhihuplus.ui.view.PagerSlidingTab>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_fl"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <include layout="@layout/menu_list" />
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>
