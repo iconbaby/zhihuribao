@@ -1,32 +1,34 @@
 package com.example.slkk.zhihuplus.bean;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Home {
-    private ArrayList<String> picture;//首页的ViewPager的图片
-    private ArrayList<AppInfo> list;//列表数据
+    private String data;
+    private List<Stories> stories;
+    private List<TopStories>top_stories;
 
-    public ArrayList<String> getPicture() {
-        return picture;
+    public String getData() {
+        return data;
     }
 
-    public void setPicture(ArrayList<String> picture) {
-        this.picture = picture;
+    public void setData(String data) {
+        this.data = data;
     }
 
-    public ArrayList<AppInfo> getList() {
-        return list;
+    public List<Stories> getStories() {
+        return stories;
     }
 
-    public void setList(ArrayList<AppInfo> list) {
-        this.list = list;
+    public void setStories(List<Stories> stories) {
+        this.stories = stories;
     }
 
-    @Override
-    public String toString() {
-        return "Home{" +
-                "picture=" + picture.size() +
-                ", list=" + list.size() +
-                '}';
+    public List<TopStories> getTop_stories() {
+        return top_stories;
+    }
+
+    public void setTop_stories(List<TopStories> top_stories) {
+        this.top_stories = top_stories;
     }
 }

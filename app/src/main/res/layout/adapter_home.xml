@@ -2,85 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
-    android:paddingTop="5dp"
-    android:paddingBottom="1dp"
-    android:orientation="vertical">
+    android:paddingTop="5dp">
 
     <LinearLayout
-        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/selector_list_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    <!--第一行-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="15dp">
 
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/iv_icon" />
+            android:id="@+id/home_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
 
-        <LinearLayout
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/home_desc"
             android:layout_marginLeft="5dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textSize="15sp"
-                android:textColor="@color/txt_title"
-                android:text="有缘网"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_name" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息描述"/>
 
-            <RatingBar
-                style="@android:style/Widget.RatingBar"
-                android:layout_width="wrap_content"
-                android:numStars="5"
-                android:isIndicator="true"
-                android:progressDrawable="@drawable/ratingbar"
-                android:maxHeight="18dp"
-                android:minHeight="18dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/rb_star" />
-
-            <TextView
-                android:textSize="13sp"
-                android:textColor="@color/txt_small"
-                android:text="1.2M"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_size" />
-        </LinearLayout>
-        
-    </LinearLayout>
-
-    <!--分割线-->
-    <View
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#5666"
-        />
-    <!--产品描述-->
-    <TextView
-        android:textSize="13sp"
-        android:textColor="@color/txt_small"
-        android:singleLine="true"
-        android:text="一支穿云箭，千军万马来相见,一支穿云箭，千军万马来相见一支穿云箭，千军万马来相见一支穿云箭，千军万马来相见"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_des" />
     </LinearLayout>
 </LinearLayout>
